@@ -8,6 +8,315 @@
   </introduction>
 
   <!-- include sections -->
-  <xi:include href="sec-section-name.ptx" />
+  <!-- xi:include href="sec-section-name.ptx" -->
+    <section xml:id="sec-sets">
+    <title> An introduction to sets </title>
+      <definition xml:id="def-sets">
+      <title>Sets</title>
+        <p>
+          A <em>set</em> <m>S</m> is an unordered collection of objects.
+          <ol>
+            <li>
+              <p>
+                The objects are called <term>elements</term> of the set. 
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>S</m> is said to <term>contain</term> its elements.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>a</m> is contained in <m>S</m> we write <m>a\in S</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>a</m> is <em>not</em> contained in <m>S</m> we write <m>a \notin S</m>.
+              </p>
+            </li>
+          </ol>
+          <me>S = \{a_1,a_2,...,a_n\}</me>,
+          where <m>a_1,...,a_m</m> are the <q>elements</q> of <m>S</m>.
+        </p>
+      </definition>
+      <convention xml:id="conv-sets">
+        <ul>
+          <li>
+            <p>
+              We use uppercase letters to denote sets: <m>S</m>.
+            </p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>
+              We use lowercase letters to denote elements of sets: <m>a</m>.
+            </p>
+          </li>
+        </ul>
+      </convention>
+    </section>
+    <section xml:id="sec-common-examples">
+      <title>Common examples</title>
+      <p>
+        Here are some very common examples of sets.
+      </p>
+      <p>
+      <ul>
+        <li>
+          <p>
+            The <term>integers</term> are the set
+            <m>\mathbb{Z} = \{\ldots,-3,-2,-1,0,1,2,3,\ldots\}</m>.
+          </p>
+        </li>
+        
+        <li>
+          <p>
+            The <term>natural numbers</term> are the set
+            <m>\mathbb{N} = \mathbb{Z}_{\geq 0} \{0,1,2,3,4,5,6,\ldots\}</m>. 
+          </p>
 
+        </li>
+        
+        <li> The <term>positive integers</term> are the set
+          <m>\mathbb{Z}_{>0} = \{1,2,3,4,5,\ldots\}</m>.
+        </li>
+        <li>
+          <p>
+            The <term>rational numbers</term> are the set
+            <m>\mathbb{Q} = \bigl\{ \frac ab \mid a,b \in \mathbb{Z} \bigr\}</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The <term>real numbers</term> are denoted <m>\mathbb{R}</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The <term>positive real numbers</term> are denoted <m>\mathbb{R}_{>0}</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The <term>complex numbers</term> are the set 
+            <m>\mathbb{C} = \{a + b \mathrm{i} \mid a,b \in \mathbb{R}\}</m>.
+          </p>
+        </li>
+      </ul>
+      </p>
+                
+      <warning>
+        <p> 
+          The notation <m>\mathbb{N}</m> and the term <em>natural numbers</em> are not generally agreed upon, some mathematician include 0, some do not.
+          Because of this we will use the notations <m>\mathbb{Z}_{>0}</m> and <m>\mathbb{Z}_{\geq 0}</m>.
+        </p>
+      </warning>
+        
+    </section>
+
+    <section xml:id="sec-subsets">
+      <title>Subsets</title>
+      <definition xml:id="def-subsets">
+        <title>subsets</title>    
+        <statement>
+          <p>
+            Given sets <m>A</m> and <m>B</m>, we say that <m>A</m> is a <term>subset</term> of <m>B</m>,
+            which we denote <m>A \subseteq B</m>, if
+            for every <m>a \in A</m> it follows that <m>a \in B</m>.
+            i.e., 
+            <me>
+              a \in A \Rightarrow a \in B
+            </me>.
+          </p>
+        </statement>
+      </definition>
+      <example>
+        <ul>
+          <li>
+            <p>
+              <m>\{1,2,3\}\subseteq \{1,2,3,4,5\}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\{1,2,3\} \subseteq \mathbb{Z}_{\geq 0}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\mathbb{Z}_{\geq 0 } \subseteq \mathbb{Z} \subseteq \mathbb{Q} \subseteq \mathbb{R} \subseteq \mathbb{C}</m>.
+            </p>
+          </li>
+        </ul>
+      </example>
+
+      <exercise>
+        <p>
+          Are the following subsets?          
+        </p>
+        <ol>
+          <li>
+            <p> Let <m>O</m> be the set of odd integers. Is <m>O \subseteq \mathbb{Z}_{\geq 0}</m>?
+            </p>
+        
+            <solution>
+              <p>
+                No. For example, <m>-1 \in O</m> but <m>-1 \notin \mathbb{Z}_{\geq 0}</m>.
+              </p>
+            </solution>
+          </li>
+          <li>
+            <p>
+              Is <m>\{1,2,3\} \subseteq \{2,3,4,5\}</m>?
+            </p>
+            <solution>
+              <p>
+                No. <m>1 \in \{1,2,3\}</m> but <m>1 \notin \{2,3,4,5\}</m>?
+              </p>
+            </solution>
+          </li>
+          <li>
+            <p>
+              Is <m>\{1\}\subseteq \{\{1\},2,3,4\}</m>?
+            </p>
+            <solution>
+              <p>
+                No, but this one is tricky! <m>\{1\} \in \{\{1\},2,3,4\}</m> but <m>\{1\} \not\subseteq \{\{1\},2,3,4\}</m>. 
+                i.e., it is a an element not a subset.
+                You can write <m>\{\{1\}\} \subseteq \{\{1\},2,3,4\}</m>.
+              </p>
+            </solution>
+          </li>
+        </ol>
+      </exercise>
+ 
+      <definition xml:id="def-proper-subset">
+        <title>proper subsets</title>
+        
+        
+        <statement>
+          <p>
+            A subset <m>A \subseteq B</m> is a <term>proper subset</term>
+            if <m>A</m> is <em>strictly smaller</em> than <m>B</m>.
+            i.e., There is a <m>b \in B</m> such that <m>b \notin A</m>.
+          </p>
+
+          <p>
+            We denote a proper subset by
+            <me>
+              A \subset B \quad \text{or} \quad A \subsetneq B.
+            </me>
+            
+          </p>
+        </statement>
+      </definition>
+
+      <definition xml:id="def-emptyset">
+        <title>empty set</title>
+        
+        <statement>
+          <p>
+            The empty set, <m>\emptyset</m> is the set with no elements:
+            <me>
+              \emptyset = \{~\}
+            </me>
+            
+          </p>
+        </statement>
+        <!--video youtube="fvXcEgx274I"/-->
+      </definition>
+
+      <theorem xml:id="thm-emptyset-subset">
+        <statement>
+          <p>
+            For every set <m>A</m>, <me>\emptyset \subseteq A.</me>
+          </p>
+        </statement>
+      </theorem>
+
+      <proof>
+        <p>
+          We give a proof by contradiction.
+        </p>
+        <p>
+          Assume that <m>\emptyset \not\subseteq A</m>.
+          By the definition of subsets this means that there is an <m>x \in \emptyset</m>
+          such that <m>x \notin A</m>. This is a contradiction since there is no such <m>x \in \emptyset</m>.
+        </p>
+      </proof>
+      
+      
+      <fact xml:id="fact-subsets">
+        <statement>
+          <p>
+            Every set <m>S</m> has two subsets:
+            <ol>
+              <li>
+                <p>
+                  <m>\emptyset \subset S</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>S \subset S</m>
+                </p>
+              </li>
+            </ol>
+            i.e., Every set is a subset of itself and every set contains the empty set.
+          </p>
+        </statement>
+      </fact>
+
+      <theorem xml:id="thm-emptyset-unique">
+        <statement>
+          <p>
+            The empty set is unique. (There is only one emptyset.)
+          </p>
+        </statement>
+      </theorem>
+
+      <proof>
+        <p>
+          Assume there are two emptyset <m>E_1</m> and <m>E_2</m>.
+          By <xref ref="thm-emptyset-subset"/> we have that <m>E_1 \subseteq E_2</m> and
+          <m>E_2 \subseteq E_1</m>.
+          Thus <m>E_1 = E_2</m>.
+        </p>
+      </proof>
+
+      <note>
+        This proof showed us 3 new things:
+        <ul>
+          <li>
+            <p>
+              Two sets are equal if they contain the same elements.
+            </p>
+          </li>
+          <li>
+            <p>
+              Two sets are equal if they each contain each other.
+            </p>
+          </li>
+          <li>
+            <p>
+              How to prove something is unique.
+            </p>
+          </li>
+        </ul>
+      </note>
+      
+    </section>
+
+    <section xml:id="sec-cardinality">
+      <title>Cardinality</title>
+      
+    </section>
+
+    <section xml:id="sec-cartesian-products">
+      <title>Cartesian products</title>
+      
+    </section>
 </chapter>
