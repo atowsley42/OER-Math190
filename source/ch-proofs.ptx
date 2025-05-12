@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<chapter xml:id="ch-chapter-title" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Chapter Title</title>
+<chapter xml:id="ch-proofs" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction to proofs</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> You are going to hate this chapter. </p>
   </introduction>
 
   <!-- include sections -->

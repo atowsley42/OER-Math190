@@ -5,14 +5,15 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>My new book for Math</title>
+    <title>My new book for Math 190</title>
     <subtitle>An example to get you started</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./ch-chapter-title.ptx" />
+    <xi:include href="./ch-proofs.ptx" />
+    <xi:include href="./ch-sets.ptx" />
 
 
     <!-- Include backmatter -->
