@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Practice-not-messing-up-code" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <title>Here is a section that Bonnie added.</title>
+
+
+    <example xml:id="example-proof-square-root-of-2-irrational">
+        <title>The square root of 2 is irrational!</title>
+            <p>
+                Let's prove that <m>\sqrt{2}</m> is irrational. We will use contradiction.  Before reading the proof, think about how this may look.  What's the opposite of irrational? What does it mean?
+            </p>
+            <theorem xml:id="thm-sqrt2irrational">
+                <statement>
+                    <p>
+                       The number <m>\sqrt{2}</m> is irrational. 
+                    </p>
+                </statement>
+            </theorem>
+            
+            <proof>
+                <p>
+                Suppose that the theorem statement is wrong.  So, assume that <m>\sqrt{2}</m> is rational.
+                </p>
+                <p>
+                Then <m>\sqrt{2}=\frac{a}{b}</m> for some integers <m>a, b</m> with <m>b \neq 0</m> where <m>a, b</m> have no common divisors.
+                </p>
+                <p>
+                Then <m>2=\frac{a^2}{b^2}</m> and equivalently <m>2b^2=a^2</m>.
+                </p>
+                <p>
+                    Since <m>a^2=2b^2</m>, that means that <m>a^2</m> is divisible by 2.
+                     Since <m>a</m> is an integer, <m>a</m> is divisble by 2.  But then <m>a^2</m> is divisble by 4.  
+                </p>
+                <p>
+                    But then we must have that <m>b^2</m> is divisble by 2, which means that <m>b</m> is divisble by 2, a contradiction of the assumption that <m>a,b</m> have no common divisors.
+                </p>
+
+
+            </proof>
+        This isn't magical for 2.  We can use the same idea for <m>\sqrt{3}</m> for example.  
+    </example>
+  </section>
