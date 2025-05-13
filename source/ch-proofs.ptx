@@ -10,4 +10,99 @@
   <!-- include sections -->
   <xi:include href="sec-section-name.ptx" />
 
+  <section xml:id="sec-Practice-with-PreFigure">
+    <title>Practice with PreFigure</title>
+    <figure>
+      <image width="40%">
+        <prefigure xmlns="https://prefigure.org"
+              label="prefigure-practice">
+          <diagram dimensions="(400,400)" margins="5">
+            <definition>f(x)=sin(x)</definition>
+            <coordinates bbox="(-5,-2,5,2)">
+              <grid-axes xlabel="x" ylabel="y"/>
+              <graph function="f"/>
+            </coordinates>
+          </diagram>
+        </prefigure>
+      </image>
+      <caption>A first try.</caption>
+    </figure>
+
+    
+    <figure>
+      <sidebyside>
+      <image width="30%">
+        <prefigure xmlns="https://prefigure.org"
+              label="Hasse-start">
+          <diagram dimensions="(400,400)" margins="2">
+            <coordinates bbox="(-1,-2,3,8)">
+              <network directed="yes" arrows="end"
+                      scale="0.8" node-fill="#fcf" node-stroke="black"
+                seed="1" labels="yes"
+                tactile-node-size="40">
+                <node at="1" p="(1,0)" edges="[2,3,4,6,8,12]" />
+                <node at="2" p="(0,2)" edges="[4,6,8,12]"/>
+                <node at="3" p="(2,2)" edges="[6,12]"/>
+                <node at="4" p="(0,4)" edges="[8,12]"/>
+                <node at="6" p="(2,4)" edges="[12]"/>
+                <node at="8" p="(0,6)" edges="[]"/>
+                <node at="12" p="(2,6)" edges="[]"/>
+                <edge vertices="(1,1)" loop-scale="(1,1)"></edge>
+                <edge vertices="(2,2)" loop-scale="(1,1)"></edge>
+                <edge vertices="(3,3)" loop-scale="(1,1)"></edge>
+                <edge vertices="(4,4)" loop-scale="(1,1)"></edge>
+                <edge vertices="(6,6)" loop-scale="(1,1)"></edge>
+                <edge vertices="(8,8)" loop-scale="(1,1)"></edge>
+                <edge vertices="(12,12)" loop-scale="(1,1)"></edge>
+              </network>
+            </coordinates>
+          </diagram>
+        </prefigure>
+      </image>
+      <image width="30%">
+        <prefigure xmlns="https://prefigure.org"
+              label="Hasse-mid">
+          <diagram dimensions="(400,400)" margins="2">
+            <coordinates bbox="(-1,-2,3,8)">
+              <network directed="yes" arrows="end"
+                      scale="0.8" node-fill="#fcf" node-stroke="black"
+                seed="1" labels="yes"
+                tactile-node-size="40">
+                <node at="1" p="(1,0)" edges="[2,3,4,6,8,12]"/>
+                <node at="2" p="(0,2)" edges="[4,6,8,12]"/>
+                <node at="3" p="(2,2)" edges="[6,12]"/>
+                <node at="4" p="(0,4)" edges="[8,12]"/>
+                <node at="6" p="(2,4)" edges="[12]"/>
+                <node at="8" p="(0,6)"/>
+                <node at="12" p="(2,6)"/>
+              </network>
+            </coordinates>
+          </diagram>
+        </prefigure>
+      </image>
+      <image width="40%">
+        <prefigure xmlns="https://prefigure.org"
+              label="Hasse">
+          <diagram dimensions="(400,400)" margins="2">
+            <coordinates bbox="(-1,-2,3,8)">
+              <network directed="no" arrows="end"
+                      scale="0.8" node-fill="#fcf" node-stroke="black"
+                seed="1" labels="yes"
+                tactile-node-size="40">
+                <node at="1" p="(1,0)" edges="[2,3]"/>
+                <node at="2" p="(0,2)" edges="[4,6]"/>
+                <node at="3" p="(2,2)" edges="[6]"/>
+                <node at="4" p="(0,4)" edges="[8,12]"/>
+                <node at="6" p="(2,4)" edges="[12]"/>
+                <node at="8" p="(0,6)"/>
+                <node at="12" p="(2,6)"/>
+              </network>
+            </coordinates>
+          </diagram>
+        </prefigure>
+      </image>
+      </sidebyside>
+      <caption>A hasse diagram.</caption>
+    </figure>
+  </section>
 </chapter>
