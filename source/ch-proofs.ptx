@@ -102,4 +102,10 @@
       <caption>A hasse diagram.</caption>
     </figure>
   </section>
+
+  <section xml:id="sec-Practice-not-messing-up-code">
+    <title>Here is a section that Bonnie added.</title>
+    <p> This is a new section. </p>
+  </section>
+
 </chapter>
