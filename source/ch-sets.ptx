@@ -312,7 +312,56 @@
 
     <section xml:id="sec-cardinality">
       <title>Cardinality</title>
-      
+      <definition xml:id="def-cardinality">
+        <title>Cardinality</title>    
+        <statement>
+          <p>
+            If a set <m>S</m> has <m>n</m> distinct elements (where <m>n \in \mathbb{Z}_{\geq 0}</m>) 
+            then we say that <m>S</m> has <term>cardinality</term> <m>n</m>.
+            We denote the cardinality by 
+            <me>
+              \lvert S \rvert = n.
+            </me>
+            In this case we say that <m>S</m> is a <term>finite set</term>.
+          </p>
+          <p>
+            If <m>S</m> is not finite we say it is an <term>infinite set</term>.
+          </p>
+        </statement>
+      </definition>
+
+      <example>
+        <ul>
+          <li>
+            <p>
+              <m>\lvert \emptyset \rvert = 0</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>V</m> is the set of vowels in the English language then <m>\lvert V \rvert = 5</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>P_{20}</m> is the set of prime numbers less than 20 then <m>\lvert P_{20}\rvert = 8</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>D</m> is the set of Snow White's dwarf friends, then <m>\lvert D \rvert = 7</m>
+            </p>
+          </li>
+        </ul>
+      </example>
+
+      <definition xml:id="def-power-set"><title>power set</title>
+        <statement>
+          <p>
+            If 
+          </p>
+        </statement>
+      </definition>
     </section>
 
     <section xml:id="sec-cartesian-products">
