@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-sets-basics" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The basics of sets</title>
     <subsection xml:id="subsec-defs">
-        <title>The basics of sets</title>
+      <p>
+        Sets are one of the basic structures of mathematics. They are used in virtually every type
+        of mathematical study. Their definition is very simple.
+      </p>
       <definition xml:id="def-sets">
       <title>Sets</title>
         <p>
