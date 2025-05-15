@@ -51,6 +51,44 @@
           </li>
         </ul>
       </convention>
+
+      <example>
+        <p>The following are sets described using the <term>roster method</term>:</p>
+        <ul>
+          <li>
+            <p>
+              <m>V = \{a,e,i,o,u\}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>C = \{\text{Alvin}, \text{Simon}, \text{Theodore}\}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>O = \{1,3,5,7,9\}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>H = \{1,3,\dots,97,99\}</m>
+            </p>
+          </li>
+        </ul>
+        <p>
+          Note that <m>H</m>, the set of odd integers between 1 and 100, is described
+          using the roster method even though not every element is listed.
+        </p>
+      </example>
+      <p>
+        Typically sets contain elements with common properties, but this is not required.
+        For instance, the following is a valid set:
+        <me>
+          S = \{2,3, \pi, \text{red}, \text{ice cream}, \text{Montana},\{4\}\}.
+        </me>
+        
+      </p>
     </subsection>
     <subsection xml:id="ssec-common-examples">
       <title>Common examples</title>
@@ -68,8 +106,8 @@
         
         <li>
           <p>
-            The <term>natural numbers</term> are the set
-            <m>\mathbb{N} = \mathbb{Z}_{\geq 0} \{0,1,2,3,4,5,6,\ldots\}</m>. 
+            The <term>nonnegative integers</term> are the set
+            <m>\mathbb{Z}_{\geq 0} \{0,1,2,3,4,5,6,\ldots\}</m>. 
           </p>
 
         </li>
@@ -104,8 +142,12 @@
                 
       <warning>
         <p> 
-          The notation <m>\mathbb{N}</m> and the term <em>natural numbers</em> are not generally agreed upon, some mathematician include 0, some do not.
-          Because of this we will use the notations <m>\mathbb{Z}_{>0}</m> and <m>\mathbb{Z}_{\geq 0}</m>.
+          Mathematicians are not in agreement on what the 
+          set called the <q>natural numbers</q> (denoted by <m>\mathbb{N}</m>) refers to.
+          Some define the natural numbers as <m>\mathbb{N} = \{1,2,3,4,\ldots\}</m> 
+          while others define them as <m>\mathbb{N} = \{0,1,2,3,4,\ldots\}</m> 
+          (note that one version contains 0 while the other does not).
+          To avoid any confusion, we use the notations <m>\mathbb{Z}_{>0}</m> and <m>\mathbb{Z}_{\geq 0}</m>.
         </p>
       </warning>
         
@@ -141,7 +183,7 @@
           </li>
           <li>
             <p>
-              <m>\mathbb{Z}_{\geq 0 } \subseteq \mathbb{Z} \subseteq \mathbb{Q} \subseteq \mathbb{R} \subseteq \mathbb{C}</m>.
+              <m>\mathbb{Z}_{>0} \subseteq \mathbb{Z}_{\geq 0 } \subseteq \mathbb{Z} \subseteq \mathbb{Q} \subseteq \mathbb{R} \subseteq \mathbb{C}</m>.
             </p>
           </li>
         </ul>
