@@ -1,5 +1,5 @@
 <section xml:id="sec-set-operations">
-    <title>Set Operations</title>
+    <title>Set operations</title>
     
     <p>
         Given two (or more) sets. There are various operations we can perform with them.
@@ -20,10 +20,10 @@
                 Let <m>A</m> and <m>B</m> be sets. The <term>union</term> of <m>A</m> and <m>B</m>
                 is the set whose elements are the elements of <m>A</m> <em>or</em> <m>B</m>.
                 We denote this as
+                <me>
+                    A \cup B = \{x \mid x \in A \vee x \in B\}.
+                </me>
             </p>
-            <me>
-                A \cup B = \{x \mid x \in A \vee x \in B\}.
-            </me>
             
         </statement>
     </definition>
@@ -32,11 +32,9 @@
         <title>Intersection of sets</title>
         <statement>
             <p>
-            <p>
                 Let <m>A</m> and <m>B</m> be sets. The <term>intersection</term> of <m>A</m> and <m>B</m>
                 is the set whose elements are the elements of <m>A</m> <em>and</em> <m>B</m>.
                 We denote this as
-            </p>
             <me>
                 A \cup B = \{x \mid x \in A \wedge x \in B\}.
             </me>                
@@ -52,22 +50,52 @@
     <caption>The union of two sets</caption>
     <image width="60%">
         <prefigure xmlns="https://prefigure.org" label="prefigure-union">
-        <diagram dimensions="(300,300)" margins="5">
-        <definition>
-        f(t,y) = (y[1], -pi*y[0]-0.3*y[1])
-        </definition>
-        <coordinates bbox="[-1,-3,6,3]">
-        <grid-axes xlabel="t" />
-        <de-solve function="f" t0="0" t1="bbox[2]" y0="(0,2)" name="oscillator" N="200" />
-        <plot-de-solution at="x" solution="oscillator" axes="(t,y0)" />
-        <plot-de-solution at="xprime" solution="oscillator" axes="(t,y1)" stroke="red" tactile-dash="9 9" />
-        <legend at="legend" anchor="(bbox[2], bbox[3])" alignment="sw" scale="0.9" opacity="0.5">
-        <item ref="x"><m>x(t)</m></item>
-        <item ref="xprime"><m>x'(t)</m></item>
-        </legend>
-        </coordinates>
-        </diagram>
+            <diagram dimensions="(300,180)" margins="5">
+            <coordinates bbox="(0,0,10,6)">
+                <define-shapes>
+                <circle at="A" center="(4,3)" radius="2"/>
+                <circle at="B" center="(6,3)" radius="2"/>
+                </define-shapes>
+
+                <shape shapes="A,B" operation="union"
+                fill="blue" stroke="black"/>
+                <shape shape="A" stroke="black"/>
+                <shape shape="B" stroke="black"/>
+                <rectangle lower-left="(0,0)" dimensions="(10,6)" stroke="black"/>
+
+                <label anchor="(2,3)" alignment="nw"><m>A</m></label>
+                <label anchor="(8,3)" alignment="ne"><m>B</m></label>
+                <label anchor="(5,0.5)"><m>A\cup B</m></label>
+            </coordinates>
+            </diagram>
         </prefigure>
     </image>
     </figure>
+
+    <figure>
+    <caption>The intersection of two sets</caption>
+    <image width="60%">
+        <prefigure xmlns="https://prefigure.org" label="prefigure-union">
+            <diagram dimensions="(300,180)" margins="5">
+            <coordinates bbox="(0,0,10,6)">
+                <define-shapes>
+                <circle at="A" center="(4,3)" radius="2"/>
+                <circle at="B" center="(6,3)" radius="2"/>
+                </define-shapes>
+
+                <shape shapes="A,B" operation="intersection"
+                fill="blue" stroke="black"/>
+                <shape shape="A" stroke="black"/>
+                <shape shape="B" stroke="black"/>
+                <rectangle lower-left="(0,0)" dimensions="(10,6)" stroke="black"/>
+
+                <label anchor="(2,3)" alignment="nw"><m>A</m></label>
+                <label anchor="(8,3)" alignment="ne"><m>B</m></label>
+                <label anchor="(5,0.5)"><m>A\cap B</m></label>
+            </coordinates>
+            </diagram>
+        </prefigure>
+    </image>
+    </figure>
+    
 </section>
