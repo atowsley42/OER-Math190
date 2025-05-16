@@ -5,8 +5,8 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>My new book for Math 190</title>
-    <subtitle>An example to get you started</subtitle>
+    <title>Math 190</title>
+    <subtitle>Discrete mathematics for computing</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
@@ -18,8 +18,6 @@
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
-
-    <p> I am messing it up right now!</p>
-
+    
   </book>
 </pretext>
